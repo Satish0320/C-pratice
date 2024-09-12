@@ -1,0 +1,25 @@
+      #include<stdio.h>
+      void Lyear(int Myear);
+      int main()
+      {
+          int year;
+          printf("Enter the year: \n");
+          scanf("%d", &year);
+            Lyear(year);
+          return 0;
+      }
+      
+      void Lyear(int Myear){
+          if ((Myear % 400 == 0) || (Myear % 4 == 0 && Myear % 100 != 0)){
+            printf("It's a leap year\n");
+      }else{
+            printf("It's not a leap year\n");
+      }  
+    }
+      
+
+
+
+Enter the year: 
+2025
+It's not a leap year

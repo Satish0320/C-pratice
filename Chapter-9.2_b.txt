@@ -1,0 +1,24 @@
+#include <stdio.h>
+int Cweight(int kilograms,int *g, int *tons, int *pounds);
+
+int main() {
+    int kilograms, g, tons,pounds;
+    printf("Enter the weight in KG: ");
+    scanf("%d",&kilograms);
+    Cweight(kilograms, &g, &tons, &pounds);
+    printf("The weight in grams is : %d\n",g);
+    printf("The weight in tons is : %d\n",tons);
+    printf("The weight in pounds is : %d\n",pounds);
+    return 0;
+}
+int Cweight(int kilograms, int *g, int *tons, int *pounds){
+     *g = kilograms * 1000;
+     *tons = kilograms/1000;
+     *pounds = kilograms*2.204;
+}
+
+
+Enter the weight in KG: 1000000
+The weight in grams is : 1000000000
+The weight in tons is : 1000
+The weight in pounds is : 2204000

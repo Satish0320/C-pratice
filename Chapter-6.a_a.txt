@@ -1,0 +1,29 @@
+#include <stdio.h>
+
+int main() {
+    int num , i;
+    printf("Enter the number: ");
+    scanf("%d", &num);
+    
+    i=1;
+    do{
+        printf("%d * %d = %d \n", num, i, num*i);
+        i++;
+    }
+    while(i<=10);
+    return 0;
+}
+
+
+
+Enter the number: 29
+29 * 1 = 29 
+29 * 2 = 58 
+29 * 3 = 87 
+29 * 4 = 116 
+29 * 5 = 145 
+29 * 6 = 174 
+29 * 7 = 203 
+29 * 8 = 232 
+29 * 9 = 261 
+29 * 10 = 290

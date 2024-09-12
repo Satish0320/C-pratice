@@ -1,0 +1,25 @@
+#include <stdio.h>
+int main() {
+    int avg,sum=0,i;
+    int marks[5];
+    for(i=0;i<=4;i++){
+        printf("Enter the marks: ");
+        scanf("%d", &marks[i]);
+    }
+    for(i=0;i<=4;i++)
+        sum=sum+marks[i];
+        avg = sum/5;
+        printf("The average is: %d", avg);
+        return 0;
+    
+    return 0;
+}
+
+
+
+Enter the marks: 8
+Enter the marks: 9
+Enter the marks: 5
+Enter the marks: 6
+Enter the marks: 4
+The average is: 6

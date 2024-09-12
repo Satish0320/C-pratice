@@ -1,0 +1,18 @@
+# include<stdio.h>
+# define_BV(x) (1<<x)
+void showbits( unsigned char n );
+int main(){
+    unsigned char color,i;
+    int c;
+    char *rbcolors[]={
+        "violet", "indigo", "blue", "green",
+        "yellow", "orange", "red" };
+        printf("\n Enter any number :");
+        scanf("%d", &c);
+        color = (unsigned char)c;
+        printf("Colors represented are:\n");
+        for(i=0;i<=6;i++){
+            if((color &_BV(i))== _BV(i))
+                printf("%s\n", rbcolors[i]);
+        }
+}

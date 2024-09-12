@@ -1,0 +1,20 @@
+#include<stdio.h>
+
+int main()
+{
+    int l = 1;
+    int b = 2;
+	int AR = l*b; 
+	int PR = (l+b)*2; 
+	
+	if(AR > PR)
+	printf("Area of rectange is bigger than it's perimeter");
+	else
+	printf("Area of rectange is smaller than it's perimeter");
+	return 0;
+}
+
+
+
+
+Area of rectange is smaller than it's perimeter

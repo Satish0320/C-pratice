@@ -1,0 +1,16 @@
+#include <stdio.h>
+int main() {
+    int s[4][2] = { {1,11}, {2,22}, {3,33}, {4,44} };
+    int i;
+    for(i=0;i<=3;i++)
+        printf("Address of %d is = %u\n", i,s[i]);
+    return 0;
+}
+
+
+
+
+Address of 0 is = 1770499632
+Address of 1 is = 1770499640
+Address of 2 is = 1770499648
+Address of 3 is = 1770499656

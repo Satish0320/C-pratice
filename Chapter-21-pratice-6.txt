@@ -1,0 +1,30 @@
+# include<stdio.h>
+void display( unsigned short int time );
+int main(){
+    unsigned short int time;
+    puts("Enter any number less than 24466: ");
+    scanf("%hu", &time);
+    display (time);
+    return 0;
+}
+void display( unsigned short int tm ){
+    unsigned short int hours, minutes,seconds, temp;
+    hours = tm>>11;
+    temp = tm<<5;
+    minutes = temp>>10;
+    temp = tm<<11;
+    seconds = (temp>>11)*2;
+    printf("For time = %hu\n", tm);
+    printf("For time = %hu\n", hours);
+    printf("For time = %hu\n", minutes);
+    printf("For time = %hu\n", seconds);
+}
+
+
+
+Enter any number less than 24466: 
+15500
+For time = 15500
+For time = 7
+For time = 36
+For time = 24

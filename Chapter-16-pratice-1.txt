@@ -1,0 +1,24 @@
+#include<stdio.h>
+#include<string.h>
+int main(){
+    char list[6][20]={
+        "akshay", "parag", "satish",
+        "tejas", "abhishek", "gopal"
+    };
+    int i;
+    char yourname[20];
+    printf("Enter your name: ");
+    scanf("%s", &yourname);
+    for(i=0;i<=5;i++){
+        if(strcmp(&list[i][0],yourname)==0){
+            printf("Welcome,you can enter");
+            return 0;
+        }
+    }
+    printf("Sorry, you can't enter");
+    return 0;
+}
+
+
+Enter your name: tejas
+Welcome,you can enter

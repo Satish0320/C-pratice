@@ -1,0 +1,21 @@
+#include<stdio.h>
+int main()
+{
+int x,y;
+printf("Enter the x-y coordinates of the point : ");
+scanf("%d%d", &x,&y);
+
+if(x==0 && y==0)
+	printf("The point is on the origin.");
+if(x==0 && y!=0)
+	printf("The point lie on the y-axis");
+if(x!=0 && y==0)
+	printf("The points lie on the x-axis");
+if(x!=0 && y!=0)
+	printf("The points lie on the plane");
+return 0;
+}
+
+
+Enter the x-y coordinates of the point : 1 2
+The points lie on the plane

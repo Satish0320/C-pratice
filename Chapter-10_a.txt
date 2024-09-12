@@ -1,0 +1,41 @@
+#include <stdio.h>
+int nonrec(int);
+int rec(int);
+int main() {
+    int num, sum;
+    printf("Enter the number: ");
+    scanf("%d", &num);
+    
+    sum = nonrec(num);
+    printf("\nSum of digits using non-recursive function : %d\n", sum);
+    
+    sum = rec(num);
+    printf("\nSum of digits using recursive function : %d\n", sum);
+    return 0;
+}
+
+int nonrec(int num){
+    int a,sum=0,i;
+    for(i=0;num;i++){
+        a=num%10;
+        sum=sum+a;
+        num=num/10;
+    }
+    return(sum);
+}
+
+int rec(int num){
+    int sum=0;
+    if(num==0)
+        return sum;
+    sum= num % 10 + rec(num/10);
+    return sum;
+}
+
+
+
+Enter the number: 10
+
+Sum of digits using non-recursive function : 1
+
+Sum of digits using recursive function : 1

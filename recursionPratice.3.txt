@@ -1,0 +1,26 @@
+#include <stdio.h>
+int factor(int,int);
+int main() {
+    int num;
+    printf("Enter the num:");
+    scanf("%d",&num);
+    printf("prime factors are :");
+    factor(num,2);
+    return 0;
+}
+
+int factor(int n,int i){
+    if(i<=n){
+        if(n%i==0){
+           printf("%d",i);
+           n=n/i;
+        }
+        else
+            i++;
+            factor(n,i);
+    }
+}
+
+
+Enter the num:18
+prime factors are :233

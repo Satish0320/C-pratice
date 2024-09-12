@@ -1,0 +1,21 @@
+# include <stdio.h>
+void display();
+int main(){
+    void(*ptr)();
+    ptr = display;
+    printf("Address of function is %u\n", ptr);
+    (*ptr)();
+    display();
+return 0;
+}
+
+void display(){
+    printf("This is satish!!!!\n");
+}
+
+
+
+
+Address of function is 4198776
+This is satish!!!!
+This is satish!!!!

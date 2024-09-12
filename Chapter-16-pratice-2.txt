@@ -1,0 +1,21 @@
+#include<stdio.h>
+int main(){
+    char names[][20]={
+        "akshay", "parag", "satish",
+        "tejas", "abhishek", "gopal"
+    };
+    int i;
+    char t;
+    printf("original %s %s\n", &names[2][0],&names[3][0]);
+    for(int i=0;i<=19;i++){
+        t=names[2][i];
+        names[2][i]=names[3][i];
+        names[3][i]=t;
+    }
+    printf("New %s %s\n", &names[2][0],&names[3][0]);
+    return 0;
+}
+
+
+original satish tejas
+New tejas satish

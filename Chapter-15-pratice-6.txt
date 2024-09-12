@@ -1,0 +1,15 @@
+#include <stdio.h>
+#include<string.h>
+int main() {
+    char arr[]="Satish" , target[20];
+    strcpy(target,arr);
+    printf("arr string = %s\n", arr);
+    printf("target string = %s", target);
+    return 0;
+}
+
+
+
+
+arr string = Satish
+target string = Satish

@@ -1,0 +1,27 @@
+#include <stdio.h>
+
+int main() {
+    
+    int l = 10;
+    int w  = 5;
+    int P = (l + w) * 2;
+    int A = l * w;
+    int r = 6;
+    int AC = 3.14 * r * r;
+    int PC = 2  *3.14 * r;
+    
+    printf("Perimeter of rectangle %d\n", P);
+    printf("Area of rectangle %d\n", A);
+    printf("Area of circle %d\n", AC);
+    printf("perimeter of rectangle %d\n", PC);
+    return 0;
+}
+
+
+
+
+	Output:
+Perimeter of rectangle 30
+Area of rectangle 50
+Area of circle 113
+perimeter of rectangle 37

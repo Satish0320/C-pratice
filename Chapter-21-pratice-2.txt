@@ -1,0 +1,37 @@
+#include <stdio.h>
+void showbits( unsigned char );
+int main() {
+    unsigned char num = 225,k;
+    printf("\nDecimal %d is same as binary ", num);
+    showbits( num );
+    k = num>>1;
+    printf("\n%d right shift 1 gives ", num);
+    showbits(k);
+    k = num >>2;
+    printf("\n%d right shift 2 gives ", num);
+    showbits(k);
+    k = num<<1;
+    printf("\n%d right shift 1 gives ", num);
+    showbits(k);
+     k = num<<2;
+    printf("\n%d right shift 2 gives ", num);
+    showbits(k);
+    return 0;
+}
+void showbits( unsigned char n ){
+    int i;
+    unsigned char j,k, andmask;
+    for(i=7;i>=0;i--){
+        j=i;
+        andmask = 1<<j;
+        k = n&andmask;
+        k==0?printf("0"):printf("1");
+    }
+}
+
+
+Decimal 225 is same as binary 11100001
+225 right shift 1 gives 01110000
+225 right shift 2 gives 00111000
+225 right shift 1 gives 11000010
+225 right shift 2 gives 10000100

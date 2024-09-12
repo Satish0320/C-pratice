@@ -1,0 +1,24 @@
+#include <stdio.h>
+int main() {
+    int student[4][2];
+    int i;
+    for(i=0;i<=3;i++){
+    printf("Enter the rollNo. and marks : ");
+    scanf("%d %d", &student[i][0], &student[i][1]);
+    }
+    for(i=0;i<=3;i++){
+       printf("%d %d\n", student[i][0], student[i][1]); 
+    }
+    return 0;
+}
+
+
+
+Enter the rollNo. and marks : 10 80
+Enter the rollNo. and marks : 45 75
+Enter the rollNo. and marks : 5 94
+Enter the rollNo. and marks : 77 35
+10 80
+45 75
+5 94
+77 35

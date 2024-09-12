@@ -1,0 +1,29 @@
+#include<stdio.h>
+#include<string.h>
+int main(){
+    enum department{
+        assembly, manufacturing, accounts, stores
+    };
+    struct employee{
+        char name[30]; int age; enum department dept;
+    };
+    struct employee e;
+    strcpy(e.name, "satish Choudhary");
+    e.age = 23;
+    e.dept = manufacturing;
+    printf("Name = %s\n", e.name);
+    printf("Age = %d\n", e.age);
+    printf("Department = %d\n", e.dept);
+    if(e.dept = accounts)
+        printf("%s is an accountant\n", e.name);
+    else
+        printf("%s is not an accountant\n", e.name);
+return 0;
+}
+
+
+
+Name = satish Choudhary
+Age = 23
+Department = 1
+satish Choudhary is an accountant

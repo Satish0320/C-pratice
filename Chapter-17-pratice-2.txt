@@ -1,0 +1,44 @@
+#include <stdio.h>
+
+int main() {
+    struct book {
+        char name[50];
+        float price;
+        int pages;
+    };
+
+    struct book b1, b2, b3;
+
+    printf("Enter name, price, and number of pages of 3 books\n");
+
+    printf("Enter details for book 1:\n");
+    scanf("%s %f %d", b1.name, &b1.price, &b1.pages);
+
+    printf("Enter details for book 2:\n");
+    scanf("%s %f %d", b2.name, &b2.price, &b2.pages);
+
+    printf("Enter details for book 3:\n");
+    scanf("%s %f %d", b3.name, &b3.price, &b3.pages);
+
+    printf("\nDetails of the books:\n");
+
+    printf("Book 1: %s, Price: %.2f, Pages: %d\n", b1.name, b1.price, b1.pages);
+    printf("Book 2: %s, Price: %.2f, Pages: %d\n", b2.name, b2.price, b2.pages);
+    printf("Book 3: %s, Price: %.2f, Pages: %d\n", b3.name, b3.price, b3.pages);
+
+    return 0;
+}
+
+
+Enter name, price, and number of pages of 3 books
+Enter details for book 1:
+ A 1.0 10A 1.0 10
+Enter details for book 2:
+B 2.0 20
+Enter details for book 3:
+C 3.0 30
+
+Details of the books:
+Book 1: A, Price: 1.00, Pages: 10
+Book 2: B, Price: 2.00, Pages: 20
+Book 3: C, Price: 3.00, Pages: 30

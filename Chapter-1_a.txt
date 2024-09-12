@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+int main() {
+    
+    int fahrenheit = 58;
+    int temperature = (fahrenheit * 9/5) + 32 ;
+    
+    printf("the temperature is %d", temperature);
+    return 0;
+}
+
+
+
+	output:
+the temperature is 136

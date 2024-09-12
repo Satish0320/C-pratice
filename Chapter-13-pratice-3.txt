@@ -1,0 +1,35 @@
+#include <stdio.h>
+void display1 (int *, int);
+void display2 (int [], int);
+int main(){
+    int num[]={24, 34, 12, 44, 56, 17};
+    display1 (&num[0], 6);
+    display2 (&num[0],6);
+    return 0;
+} 
+void display1 (int *ptr, int n){
+    int i;
+    for(i=0;i<=n-1;i++){
+        printf ("element = %d\n", ptr); 
+        ptr++; 
+    }
+}
+void display2 (int ptr[], int n) {
+    int i; 
+    for (i=0; i<=n-1;i++)
+        printf ("element = %d\n", ptr[i]);
+}
+
+
+element = 164097952
+element = 164097956
+element = 164097960
+element = 164097964
+element = 164097968
+element = 164097972
+element = 24
+element = 34
+element = 12
+element = 44
+element = 56
+element = 17

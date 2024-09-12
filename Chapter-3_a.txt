@@ -1,0 +1,27 @@
+#include <stdio.h>
+int main() {
+    int num, n5, n4, n3, n2, n1;
+    int rnum ;
+    printf("Enter the 5 numbers ");
+    scanf("%d", &num);
+    n5 = num % 10;
+    num = num / 10;
+     n4 = num % 10;
+    num = num / 10;
+     n3 = num % 10;
+    num = num / 10;
+     n2 = num % 10;
+    num = num / 10;
+     n1 = num % 10;
+    num = num / 10;
+    
+    rnum = n5* 10000 + n4*1000+ n3*100+ n2*10+ n1*1;
+    printf("The reverse num id %d", rnum);
+    return 0;
+}
+
+
+
+
+Enter the 5 numbers 12345
+The reverse num id 54321

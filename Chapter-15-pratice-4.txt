@@ -1,0 +1,17 @@
+#include <stdio.h>
+#include<string.h>
+int main() {
+    char arr[]="Satish";
+    int len1,len2;
+    len1=strlen(arr);
+    len2 = strlen("Hello");
+    printf("string = %s length = %d\n", arr,len1);
+    printf("string = %s length = %d\n", "Hello",len2);
+    return 0;
+}
+
+
+
+
+string = Satish length = 6
+string = Hello length = 5

@@ -1,0 +1,26 @@
+#include <stdio.h>
+int Tsum(int );
+int main() {
+    int num,sum;
+    printf("Enter the number :");
+    scanf("%d",&num);
+    sum=Tsum(num);
+    printf("The total sum is %d\n",sum);
+    return 0;
+}
+
+int Tsum(int x){
+    int s,remain;
+    if(x!=0){
+        s=x%10;
+        remain = s + Tsum(x/10);
+    }
+    else
+        return 0;
+    return remain;
+}
+
+
+
+Enter the number :12345
+The total sum is 15

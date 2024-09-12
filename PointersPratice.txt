@@ -1,0 +1,35 @@
+#include <stdio.h>
+
+int main() {
+  int i = 3, *j, **k; 
+  j = &i; 
+  k = &j; 
+  printf ("Address of i = %u\n", &i); 
+  printf ("Address of i = %u\n", j);
+  printf ("Address of i = %u\n", *k);
+  printf ("Address of j = %u\n", &j);
+  printf ("Address of j = %u\n", k);
+  printf ("Address of k = %u\n", &k);
+  printf ("Value of) = %u\n",j);
+  printf ("Value of k = %u\n", k);
+  printf ("Value of i = %d\n", i);
+  printf ("Value of i = %d\n",*(&i)),
+  printf ("Value of i = %d\n", *j);
+  printf ("Value of i = %d\n", **k);
+return 0;
+}
+
+
+
+Address of i = 1526206572
+Address of i = 1526206572
+Address of i = 1526206572
+Address of j = 1526206560
+Address of j = 1526206560
+Address of k = 1526206552
+Value of) = 1526206572
+Value of k = 1526206560
+Value of i = 3
+Value of i = 3
+Value of i = 3
+Value of i = 3
